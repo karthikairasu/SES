@@ -432,3 +432,6 @@ text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
     overflow-x: auto;
     margin-right: 40px;
 }
+.table_fixed_height thead tr th {
+    white-space: nowrap;
+}

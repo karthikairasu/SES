@@ -67,6 +67,27 @@
     #example_wrapper .table tr:nth-child(1) th {
     background-color: #3276b1!important;
 }
+.dataTables_scrollBody{
+  position: relative;
+    overflow: hidden!important;
+    width: 101%!important;
+    max-height: 41vh;
+}
+.dataTables_scrollHead{
+  overflow: hidden;
+    position: relative;
+    border: 0px;
+    width: 101%!important;
+}
+.dataTables_scroll{
+  overflow-x:auto;
+}
+.po_list_data .gj-datepicker{
+        flex: 0 0 41.6%;
+      }
+      .po_list_data .gj-datepicker input{
+        max-width: 100%;
+      }
   </style>
 </head>
 <body class="bg-light">
@@ -114,7 +135,7 @@
           &ensp;</li>
       </ul>
       <ul class="navbar-nav">
-        <li class="nav-item my-1 active">
+        <li class="nav-item my-1">
           <a class="nav-link" href="home.html">
             <i class="fas fa-tachometer-alt fs_18"></i>&ensp;  Dashboard</a>
         </li>
@@ -130,7 +151,7 @@
           <a class="nav-link" href="#">
             <i class="fas fa-dolly-flatbed fs_18"></i> &ensp;RGR</a>
         </li>
-        <li class="nav-item mb-1">
+        <li class="nav-item mb-1 active">
           <a class="nav-link" href="invoice_home.html">
             <i class="fas fa-balance-scale fs_18"></i> &ensp;Invoice</a>
         </li>
@@ -209,62 +230,120 @@
         </div>
       </nav>
       <div class="container-fluid main_content bg-white p-2">
-        <div class="row mx-0">
-          <div class="col-12 text-center">
-            <h5 style="color: steelblue"> <b>Existing Order list</b> </h5>
+          <div class="row">
+            <div class="col-md-2 col-sm-2 col-12 text-center"></div>
+            <div class="col-md-8 col-sm-8 col-12 text-center">
+              <h4 class="text-center"><b>PO List</b></h4>
+            </div>
+            <div class="col-md-2 col-sm-2 col-12 pb-2 text-center"></div>
           </div>
-          <div class="col-12 text-center">
-            <table id="example" class="table table-striped table-bordered example">
-              <thead>
-                  <tr class="bg_color">
-                      <th class="text-nowrap px-3">Store Order #</th>
-                      <th class="text-nowrap px-3">Supplying Plant</th>
-                      <th class="text-nowrap px-3">Delivery date</th>
-                      <th class="text-nowrap px-3">OrderItem</th>
-                      <th class="text-nowrap px-3">Qty Ordered</th>
-                      <th class="text-nowrap px-3">Ordered Date</th>
-                      <th class="text-nowrap px-3">Status</th>
-                  </tr>
+          <div class="mb-4" style="border: 2px solid #dee2e6;">
+            <form class="" action="">
+              <div class="row p-2 mx-0">
+                <div class="col-md-6 col-sm-12 col-12 po_list_data">
+                  <div class="form-row">
+                    <label class="col-md-4 col-sm-4 col-4"><b>Nupco PO Number</b></label>
+                    <label class="col-md-1 col-sm-1 col-1 px-0">:</label>
+                    <input type="text" class="form-control-sm form-control br_cr col-md-5 col-sm-3 col-3" id="" name="" placeholder="search" value="">
+                  </div>
+                  <div class="form-row py-1">
+                    <label class="col-md-4 col-sm-4 col-4"><b>PO Date</b></label>
+                    <label class="col-md-1 col-sm-1 col-1 px-0">:</label>
+                    <input  class="form-control-sm br_cr col-md-7 col-sm-3 col-3 datepicker" name="" placeholder="" value="">
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-12">
+                  <div class="form-row">
+                    <label class="col-md-4 col-sm-4 col-4"><b>Nupco Material Code</b></label>
+                    <label class="col-md-1 col-sm-1 col-1 px-0">:</label>
+                    <input  class="form-control-sm form-control br_cr col-md-6 col-sm-4 col-3" name="" placeholder="search" value="">
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--========= border close ========-->
+          <div class="col-12 table_fixed_height text-center px-0">
+            <table id="example" class="table table-bordered mx-auto mb-0">
+              <thead class="text-white">
+                <tr>
+                  <th>All&ensp;<input type="checkbox" name="" value="" /></th>
+                  <th>NUPCO PO No</th>
+                  <th>Total Value</th>
+                  <th>Po Date</th>
+                  <th>Plant</th>
+                  <th>Po qty</th>
+                  <th>Delivery Qty</th>
+                  <th>Remaining Qty</th>
+                </tr>
               </thead>
-              <tbody>
-                  <tr onclick="window.location.href='store_order_details.html'">
-                      <td>000-000-001</td>
-                      <td>Centeral warehouse dammam</td>
-                      <td>2020-09-22</td>
-                      <td>2</td>
-                      <td>15</td>
-                      <td>2020-09-21</td>
-                      <td><span class="text-warning"><b>NEW</b></span></td>
-                  </tr>
-                  <tr onclick="window.location.href='store_order_details.html'">
-                      <td>000-000-001</td>
-                      <td>Centeral warehouse dammam</td>
-                      <td>2020-09-22</td>
-                      <td>2</td>
-                      <td>15</td>
-                      <td>2020-09-21</td>
-                      <td><span class="text-success"><b>ACCEPTED</b></span></td>
-                  </tr>
-                  <tr onclick="window.location.href='store_order_details.html'">
-                      <td>000-000-001</td>
-                      <td>Centeral warehouse dammam</td>
-                      <td>2020-09-22</td>
-                      <td>2</td>
-                      <td>15</td>
-                      <td>2020-09-21</td>
-                      <td><span class="text-danger"><b>REJECTED</b></span></td>
-                  </tr>
-                 
+
+              <tbody style="cursor: pointer;">
+                <tr>
+                  <td>
+                    <input type="checkbox" name="po_no[]" value="4500015950" />
+                  </td>
+                  <td>4500015950</td>
+                  <td>7,872,723.04</td>
+
+                  <td>2020-04-08</td>
+                  <td>E1C2</td>
+                  <td>4,261,570.00</td>
+                  <td>150,224.00</td>
+                  <td>4,111,346.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" name="po_no[]" value="4500015950" />
+                  </td>
+                  <td>4500015950</td>
+                  <td>7,872,723.04</td>
+
+                  <td>2020-04-08</td>
+                  <td>E1C2</td>
+                  <td>4,261,570.00</td>
+                  <td>150,224.00</td>
+                  <td>4,111,346.00</td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="checkbox" name="po_no[]" value="4500015950" />
+                  </td>
+                  <td>4500015950</td>
+                  <td>7,872,723.04</td>
+
+                  <td>2020-04-08</td>
+                  <td>E1C2</td>
+                  <td>4,261,570.00</td>
+                  <td>150,224.00</td>
+                  <td>4,111,346.00</td>
+                </tr>
               </tbody>
             </table>
           </div>
-        </div>
+          <center class="my-3">
+            <a
+              class="btn btn-primary"
+              href="select_item.html"
+              type="submit"
+              value="submit"
+            >
+              Create Invoice
+            </a>
+            <a
+              class="btn btn-primary"
+              href="../request.html"
+              type="submit"
+              value="submit"
+            >
+              Request Po
+            </a>
+          </center>
       </div><br>
     </div>
   </div>
   
   </div>
-</div>
 
   <!-- jQuery -->
   <script type="text/javascript" src="assets/jquery/jquery.min.js"></script>
@@ -284,6 +363,10 @@
   <!--------table style lib------------------------>
   <script src="assets/datatables/jquery.dataTables.min.js"></script>
   <script src="assets/datatables/dataTables.bootstrap4.min.js"></script>
+  <!-- date picker -->
+  <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+  <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
   <script type="text/javascript">
     $(document).ready(function() {
         $('#example').DataTable( {
@@ -308,5 +391,17 @@
       $( this ).parent( '.nav-item' ).addClass( 'active' );
     });
   </script>
+      <script type="text/javascript">
+      $('.datepicker').each(function(){
+      $(this).datepicker({
+        format: "dd/mm/yyyy",
+        uiLibrary: 'bootstrap4', 
+        iconsLibrary: 'materialicons',
+        // value: '18/10/2020',
+        // disableDates: [new Date(2020, 10, 22), '18/10/2020', '19/10/2020', '20/10/2020', '21/10/2020', '22/10/2020'],
+        // disableDaysOfWeek: [1, 2],
+            });
+        });
+    </script>
 </body>
 </html>
