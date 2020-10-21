@@ -1,0 +1,33 @@
+{
+  "name": "HOS",
+  "short_name": "HOS",
+  "icons": [{
+    "src": "../images/HOS-logo.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    }, {
+      "src": "../images/HOS-logo.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }, {
+      "src": "../images/HOS-logo.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    }, {
+      "src": "../images/HOS-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }, {
+      "src": "../images/HOS-logo.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }, {
+      "src": "../images/HOS-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }],
+  "start_url": "https://karthikairasu.github.io/HOS/",
+  "display": "standalone",
+  "background_color": "#1b1f48",
+  "theme_color": "#1b1f48"
+}

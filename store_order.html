@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-language" content="en-us">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 shrink-to-fit=no, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>HOS</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  <!-- clear Cookies -->
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <!-- <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" /> -->
+  <meta http-equiv="pragma" content="no-cache" />
+
+  <!-- Favicons -->
+  <meta name="theme-color" content="#1C2346">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="194x194">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Titillium+Web|Changa|Montserrat|Ubuntu&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Style files -->
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <!-- owl carousel Style files -->
+  <link href="assets/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Aos Style files -->
+  <link href="assets/aos/aos.css" rel="stylesheet">
+  <link href="assets/animate.css/animate.min.css" rel="stylesheet">
+  <!-- venobox Style files -->
+  <link href="assets/venobox/venobox.css" rel="stylesheet">
+
+  <link rel="manifest" href="assets/lib/manifest.json">
+  <link rel="stylesheet" type="text/css" href="assets/lib/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/lib/style2.css">
+  <!--------table style lib------------------------>
+  <link rel="stylesheet" type="text/css" href="assets/datatables/dataTables.bootstrap4.css">
+  <link rel="stylesheet" type="text/css" href="assets/datatables/dataTables.bootstrap4.min.css">
+  <style type="text/css">
+    #example .bg_color{
+        background-color: steelblue!important;
+        color: #fff!important;
+    }
+    #example_wrapper .table .bg_color th {
+        background-color: steelblue!important;
+        color: #fff!important;
+    }
+    #example_wrapper .table tr:nth-child(1) th {
+        background-color: white!important;
+    }
+    #example_wrapper .table{
+       font-size: 13px;
+    }
+    table.dataTable thead .sorting:before, table.dataTable thead .sorting_asc:before, table.dataTable thead .sorting_desc:before, table.dataTable thead .sorting_asc_disabled:before, table.dataTable thead .sorting_desc_disabled:before { 
+        right: 1px;
+    }
+    .bg-blue{
+      background: #3276b1!important;
+    }
+    #example_wrapper .table tr:nth-child(1) th {
+      background-color: #3276b1!important;
+    }
+    .dataTables_empty{
+      display: none;
+    }
+    .head_table .gj-datepicker-bootstrap [role=right-icon] button .gj-icon {
+    position: absolute;
+    font-size: 21px;
+    top: 6px;
+    left: 9px;
+    }
+    .h_sm{
+      height: calc(1.8125rem + 2px)!important;
+    }
+  </style>
+</head>
+<body class="bg-light">
+  <nav class="navbar fixed-top navbar-light bg-white topnav px-2 py-0" style="height: 108px;">
+    <div class="col-3" style="height:70px">
+     <div class="row mx-0">
+       <div class="col-3 p-0">
+         <img src="assets/images/Minis.png" class="img-fluid" height="70px" width="auto">
+      </div>
+       <div class="col-9 p-0 d-flex align-items-center">
+        <span>
+         <b  class="text-nowrap" style="color: #108f68;font-size: 12px">King Fad Military Medical Complex</b>
+         <b class="d-block text-center" style="color: #108f68;font-size: 12px">King of Saudi Arabia</b>
+        </span>
+       </div>
+     </div>
+   </div>
+    <div class="col-6 text-center px-0">
+      <h4 class="text-danger ff_mon">
+        <img class="" src="assets/images/HOS-logo.png" style="width:auto;height: 60px"><br>
+        <b class="text_shadow">NUPCO HOSPITAL ORDERING PORTAL</b></h4>
+    </div>
+    <div class="col-3 text-right px-0" style="font-size: 11px;font-weight: 600;"> 
+      <div class="row">
+         <div class="col-12 text-center">
+           <img class="" src="assets/images/logo2.png" height="50px" width="auto" style="margin:16px 10px">
+         </div>
+      </div>
+        <!-- <span class="dropdown">
+          <span class="dropdown-toggle" data-toggle="dropdown" style="color:#197c89">White Pharmacy</span> |
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Logout</a>
+          </div>
+        </span> -->
+        <span style="color:#197c89;">09/11/2020</span> |
+        <span style="color:#8a8c8d;">08:09 PM</span> |
+        <span style="color:#8a8c8d;">Help</span>
+    </div>
+  </nav><br><br><br><br>
+<div class="container-fluid px-0">
+  <div class="row mx-0">
+    <div class="sidenav sidebar px-0 mt-2 bg-grey">
+      <ul class="list-group">
+        <li  class="nav-item bg-white collapseToggle" style="padding: 18px 20px;font-size: 16px"><span class="badge badge-primary">
+          <span id="toggleIcon" class="fa fa-chevron-left"></span></span></li>
+      </ul>
+      <ul class="navbar-nav nav-sidebar">
+        <li class="nav-item my-1">
+          <a class="nav-link" href="home.html">
+            <span class="fa fas fa-tachometer-alt fs_18"></span> 
+            <span class="menuText">&ensp; Dashboard</span></a>
+        </li>
+        <li class="nav-item my-1 active">
+          <a class="nav-link" href="store_order.html">
+            <span class="fa fas fa-store fs_18"></span> 
+            <span class="menuText">&ensp; Store Order</span></a>
+        </li>
+        <li class="nav-item mb-1">
+          <a class="nav-link" href=#>
+            <span class="fa fas fa-pills fs_18"></span> 
+            <span class="menuText">&ensp; Medical List</span></a>
+        </li>
+        <li class="nav-item mb-1">
+          <a class="nav-link" href="stock_report.html">
+            <span class="fa fas fa-dolly-flatbed fs_18"></span> 
+            <span class="menuText">&ensp; Inventory</span></a>
+        </li>
+        <li class="nav-item mb-1">
+          <a class="nav-link" href="#">
+            <span class="fa fas fa-balance-scale fs_18"></span> 
+            <span class="menuText">&ensp; Sales</span></a>
+        </li>
+      </ul>
+    </div>
+    <div class="main px-3 py-5">
+      <nav class="navbar navbar-expand navbar-light bg-white shadow topsecnav py-0 px-0">
+        <a class="navbar-brand mr-0" href="#" style=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="height: 57px">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="">
+              <i class="fas fa-copy fs_18"></i><br> 
+              Copy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+              <i class="fas fa-trash fs_18"></i><br> 
+              Delete</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+              <i class="fas fa-search fs_18"></i><br>  
+              Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+              <i class="fas fa-filter fs_18"></i><br> 
+              Filter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+              <i class="fas fa-print fs_18"></i><br> 
+              Print</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+              <i class="fas fa-file-import fs_18"></i><br> 
+              import</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+              <i class="fas fa-file-export fs_18"></i><br> 
+              Export</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+              <i class="fas fa-paperclip fs_18"></i><br> 
+              Attach</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+              <i class="fas fa-certificate fs_18"></i><br> 
+              Catelogue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="add_Row">
+              <i class="fas fa-plus fs_18"></i><br> 
+              Add&nbsp;Row</a>
+            </li>
+           <!--  <li class="nav-item">
+              <a class="nav-link" href="#">
+              <img src="assets/images/market.png" style="height:30px;width:auto;"><br> 
+              Marketplace</a>
+            </li> -->
+          </ul>
+          <ul class="navbar-nav ml-auto">
+          <li class="nav-item px-2">
+            <a>
+              <form name="lang_switch" id="lang_switch">
+              <select name="lang" id="lang" class="form-control" style="box-shadow: none!important; border: 2px solid #45CBD3;">
+                <option value="english">English</option>
+                <option value="arabic">Arabic</option>
+              </select>
+            </form>
+            </a>
+          </li>
+          <li class="nav-item px-2 py-1">
+            <a href="index.html"><span class="badge badge-dark p-2" title="logout"><i class="fas fa-power-off"></i></span>
+            </a>
+          </li>
+          <li class="nav-item px-2 py-1">
+            <a>
+            </a>
+          </li>
+        </ul>
+        </div>
+      </nav>
+      <div class="container-fluid main_content bg-white p-2">
+        <div class="row mx-0">
+          <div class="col-10 text-center">
+            <h5 style="color: steelblue"></h5>
+          </div>
+          <div class="col-2 py-1 text-center">
+           
+          </div>
+          <table class="table table-borderless head_table text-center mb-0">
+              <thead>
+                 <tr>
+                  <th width="6%" class="p-0">&ensp;</th>
+                   <th width="10%" class="p-0">
+                    <label for="supplying-plant">Supplying Plant:</label></th>
+                   <th width="20%" class="p-0">
+                    <label> <b>Centeral warehouse dammam</b></label>
+                    <th width="6%" class="p-0">&ensp;</th>
+                   <th width="10%" class="p-0">
+                    <label for="delivery-date">Delivery Date:</label></th>
+                   <th width="20%" class="p-0">
+                    <input type="" class="datepicker form-control form-control-sm" name="delivery_date"></th>
+                     <th width="6%" class="p-0">&ensp;</th>
+                 </tr>
+              </thead>
+            </table>
+          <div class="col-12 text-center">
+            <table id="example" class="table table-striped table-bordered example">
+              <thead>
+                  <tr class="bg_color">
+                      <th width="4%" class="text-nowrap px-3">All&ensp;<input type="checkbox" class="option_checkbox selectAll" name="">&ensp;</th>
+                      <th width="5%" class="text-nowrap px-3">Item #</th>
+                      <th width="10%" class="text-nowrap px-3">NUPCO Material</th>
+                      <th width="5%" class="text-nowrap px-3">Customer Code</th>
+                      <th width="25%" class="text-nowrap px-3">Description</th>
+                      <th width="5%" class="text-nowrap px-3">UOM</th>
+                      <th width="5%" class="text-nowrap px-3">Qty</th>
+                      <th width="6%" class="text-nowrap px-3">Available</th>
+                  </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-12 text-center">
+            <button class="btn btn-info">Create Order</button>
+          </div>
+        </div>
+      </div><br>
+    </div>
+  </div>
+  
+  </div>
+</div>
+
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="assets/jquery/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="assets/MDB-free/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/owl.carousel/owl.carousel.min.js"></script>
+  <!-- aos script files -->
+  <script src="assets/aos/aos.js"></script>
+  <!-- venobox script files -->
+  <script src="assets/venobox/venobox.min.js"></script>
+  <!-- script files -->
+  <script src="assets/lib/crs.min.js"></script>
+  <script src="assets/lib/script.js"></script>
+  <!--------table style lib------------------------>
+  <script src="assets/datatables/jquery.dataTables.min.js"></script>
+  <script src="assets/datatables/dataTables.bootstrap4.min.js"></script>
+  <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+  <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $('#example').DataTable( {
+            "scrollY":        "47vh",
+            "scrollCollapse": true,
+            "paging":         false,
+            "searching": false,
+            "lengthMenu": [ [15, 30, 50, 100, 250, 500, 1000, 1500], [15, 20, 50, 100, 250, 500, 1000, 1500] ],
+            "iDisplayLength": 1000,
+            "ordering": false // all 
+            //"columnDefs": [ { orderable: false, targets: [0] }], //individual column
+        } );
+        for(let i=0; i<=9; i++){
+          $("#add_Row").click();
+        }
+    } );
+  </script>
+  <script>
+    $( '.topsecnav .navbar-nav .nav-link' ).on( 'click', function () {
+      $( '.topsecnav .navbar-nav' ).find( '.nav-item.active' ).removeClass( 'active' );
+      $( this ).parent( '.nav-item' ).addClass( 'active' );
+    });
+  </script>
+  <script type="text/javascript">
+    $( '.sidenav .navbar-nav .nav-link' ).on( 'click', function () {
+      $( '.sidenav .navbar-nav' ).find( '.nav-item.active' ).removeClass( 'active' );
+      $( this ).parent( '.nav-item' ).addClass( 'active' );
+    });
+  </script>
+  <script type="text/javascript"> 
+    var Counter = "1";
+    $("#add_Row").click(function(){
+    $('#example').append('<tr class="unit-table"><td><input type="checkbox" class="option_checkbox" name=""></td> <td>'+Counter+'</td> <td><input type="text" class="form-control form-control-sm" name=""></td> <td><input type="text" class="form-control form-control-sm" name=""></td> <td><input type="text" class="form-control form-control-sm" name=""></td> <td><input type="text" class="form-control form-control-sm" name=""></td> <td><input type="text" class="form-control form-control-sm" name=""></td> <td><input type="text" class="form-control form-control-sm" name=""></td> </tr>'); 
+    Counter ++;
+  });
+</script>
+  <script type="text/javascript">
+    $(".selectAll").click(function(){
+        $("input[type=checkbox]").prop('checked', $(this).prop('checked'));
+
+   });
+  </script>
+    <script>
+      $('.datepicker').datepicker({
+          uiLibrary: 'bootstrap4'
+      });
+    //   var today, datepicker;
+    // today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+    //   $('.datepicker').datepicker({
+    //       uiLibrary: 'bootstrap4',
+    //       minDate: today
+    //   });
+  </script>
+<script type="text/javascript">
+  $('.collapseToggle').on('click', function() {
+  $(".sidebar").toggleClass('sidebar--Collapse');
+  $('.main').toggleClass('main--slide');  $('#toggleIcon').toggleClass('rotate');
+  $('.topsecnav').toggleClass('topsecnav--slide');
+  $('.main .navbar').toggleClass('navbar--slide');
+
+//   setInterval(function()
+// {
+//     location.reload();
+// }, 3000);
+});
+
+// setInterval(function(){
+//      $.ajax({
+//          url:'file:///E:/Office_karthi/Projects/HOS/store_order.html',
+//          type:'GET',
+//          success: function(data){
+         
+//              $('.main').html(data);
+//          }
+//     });
+// }, 700);
+
+</script>
+</body>
+</html>

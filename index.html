@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-language" content="en-us">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 shrink-to-fit=no, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>HOS</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  <!-- clear Cookies -->
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <!-- <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" /> -->
+  <meta http-equiv="pragma" content="no-cache" />
+
+  <!-- Favicons -->
+  <meta name="theme-color" content="#1C2346">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="194x194">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Titillium+Web|Changa|Montserrat|Ubuntu&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link href="assets/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Style files -->
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <!-- owl carousel Style files -->
+  <link href="assets/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Aos Style files -->
+  <link href="assets/aos/aos.css" rel="stylesheet">
+  <link href="assets/animate.css/animate.min.css" rel="stylesheet">
+  <!-- venobox Style files -->
+  <link href="assets/venobox/venobox.css" rel="stylesheet">
+
+  <link rel="manifest" href="assets/lib/manifest.json">
+  <link rel="stylesheet" type="text/css" href="assets/lib/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/lib/style2.css">
+  <link rel="stylesheet" type="text/css" href="assets/lib/login.css">
+  <!--------table style lib------------------------>
+  <link rel="stylesheet" type="text/css" href="assets/datatables/dataTables.bootstrap4.css">
+  <link rel="stylesheet" type="text/css" href="assets/datatables/dataTables.bootstrap4.min.css">
+
+</head>
+
+<body class="">
+  <header>
+    <nav class="navbar navbar-expand fixed-top">
+      <a href="" class="navbar-brand"><img src="assets/images/logo_trans.png" height="60px"></a>
+      <!-- Links -->
+      <ul class="navbar-nav ml-auto nav group_main" role="tablist">
+        <li class="nav-item mr-3">
+          <a class="nav-link btn btn-default btn-sm text-white bubbly-button btn_logins"data-toggle="tab" href="#admin">Admin</a>
+        </li>
+        <li class="nav-item mr-3">
+          <a class="nav-link btn btn-default btn-sm text-white bubbly-button btn_logins"data-toggle="tab" href="#home">HOS</a>
+        </li>
+        <li class="nav-item mr-3">
+          <a class="nav-link btn btn-default btn-sm text-white bubbly-button btn_logins"data-toggle="tab" href="#menu1">Custodian</a>
+        </li>
+        <li class="nav-item mr-3">
+          <a class="nav-link btn btn-default btn-sm text-white bubbly-button btn_logins"data-toggle="tab" href="#menu2">3PL</a>
+        </li>
+        <li class="nav-item mr-3">
+          <a class="nav-link btn btn-default btn-sm text-white bubbly-button btn_logins"data-toggle="tab" href="#menu3">Inventory</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <video src="assets/images/videoplayback.mp4" autoplay loop playsinline muted></video>
+  <div class="overlay">
+    
+  </div>
+  <div class="container sd_none">
+
+    <!-- Outer Row -->
+    <div class="row justify-content-center my-5">
+
+      <!-- <div class="col-xl-2 col-lg-2 col-md-4 pr-md-0 px-sm-2">
+        <div class="card o-hidden border-0 shadow-lg my-md-5 mb-sm-0">
+          <ul class="nav flex-column nav-tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#admin"><b><i class="fas fa-users-cog"></i>&ensp;Admin</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#home"><b><i class="fas fa-user-shield"></i>&ensp;Custodian</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu1"><b><i class="fas fa-boxes"></i>&ensp;3PL</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#menu2"><b><i class="fas fa-h-square"></i>&ensp;HOS</b></a>
+              </li>
+            </ul> 
+        </div>
+      </div> -->
+      <div class="col-xl-4 col-lg-4 col-md-5 pl-md-0 px-sm-2">
+
+        <div class="card o-hidden border-0 my-5">
+         <div class="tab-content bg_line position-relative overflow-hidden">
+
+          <div class="blog-card__square"></div>
+          <div class="blog-card__circle"></div>
+          <div id="admin" class="container tab-pane fade"><br>
+              <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                  <!-- <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> -->
+                  <div class="col-lg-12 ff_mon">
+                    <div class="p-5">
+                      <div class="text-center">
+                        <h1 class="h4 text-danger mb-4 text_shadow"><b>HOS Admin Login</b></h1>
+                      </div>
+                      <form class="user" action="" method="post">
+                        <div class="form-group">
+                          <input type="text" class="form-control form-control-user" id="username" aria-describedby="usernameHelp" placeholder="Username / Email" required/>
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" required/>
+                        </div>
+                        <div class="form-group">
+                          <div class="custom-control custom-checkbox small">
+                            <input type="checkbox" class="custom-control-input" id="customCheck"/>
+                            <label class="custom-control-label" for="customCheck">Remember Me</label>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary btn-user btn-block" type="button" onclick="window.location.href='home.html'">
+                          Login
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="home" class="container tab-pane active"><br>
+              <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                  <!-- <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> -->
+                  <div class="col-lg-12 ff_mon">
+                    <div class="p-5">
+                      <div class="text-center">
+                        <h1 class="h4 text-danger mb-4 text_shadow"><b>HOS Login</b></h1>
+                      </div>
+                      <form class="user" action="" method="post">
+                        <div class="form-group">
+                          <input type="text" class="form-control form-control-user" id="username" aria-describedby="usernameHelp" placeholder="Username / Email" required/>
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" required/>
+                        </div>
+                        <div class="form-group">
+                          <div class="custom-control custom-checkbox small">
+                            <input type="checkbox" class="custom-control-input" id="customCheck"/>
+                            <label class="custom-control-label" for="customCheck">Remember Me</label>
+                          </div>
+                        </div>
+                        <button class="btn btn-default btn-user btn-block" type="button" onclick="window.location.href='home.html'">
+                          Login
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="menu1" class="container tab-pane fade"><br>
+              <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                  <!-- <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> -->
+                  <div class="col-lg-12 ff_mon">
+                    <div class="p-5">
+                      <div class="text-center">
+                        <h1 class="h4 text-danger mb-4 text_shadow"><b>HOS Custodian Login</b></h1>
+                      </div>
+                      <form class="user" action="" method="post">
+                        <div class="form-group">
+                          <input type="text" class="form-control form-control-user" id="username" aria-describedby="usernameHelp" placeholder="Username / Email" required/>
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" required/>
+                        </div>
+                        <div class="form-group">
+                          <div class="custom-control custom-checkbox small">
+                            <input type="checkbox" class="custom-control-input" id="customCheck"/>
+                            <label class="custom-control-label" for="customCheck">Remember Me</label>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary btn-user btn-block" type="button" onclick="window.location.href='home.html'">
+                          Login
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="menu2" class="container tab-pane fade"><br>
+              <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                  <!-- <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> -->
+                  <div class="col-lg-12 ff_mon">
+                    <div class="p-5">
+                      <div class="text-center">
+                        <h1 class="h4 text-danger mb-4 text_shadow"><b>HOS 3PL Login</b></h1>
+                      </div>
+                      <form class="user" action="" method="post">
+                        <div class="form-group">
+                          <input type="text" class="form-control form-control-user" id="username" aria-describedby="usernameHelp" placeholder="Username / Email" required/>
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" required/>
+                        </div>
+                        <div class="form-group">
+                          <div class="custom-control custom-checkbox small">
+                            <input type="checkbox" class="custom-control-input" id="customCheck"/>
+                            <label class="custom-control-label" for="customCheck">Remember Me</label>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary btn-user btn-block" type="button" onclick="window.location.href='home.html'">
+                          Login
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="menu3" class="container tab-pane fade"><br>
+              <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                  <!-- <div class="col-lg-6 d-none d-lg-block bg-login-image"></div> -->
+                  <div class="col-lg-12 ff_mon">
+                    <div class="p-5">
+                      <div class="text-center">
+                        <h1 class="h4 text-danger mb-4 text_shadow"><b>Inventory Login</b></h1>
+                      </div>
+                      <form class="user" action="" method="post">
+                        <div class="form-group">
+                          <input type="text" class="form-control form-control-user" id="username" aria-describedby="usernameHelp" placeholder="Username / Email" required/>
+                        </div>
+                        <div class="form-group">
+                          <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password" required/>
+                        </div>
+                        <div class="form-group">
+                          <div class="custom-control custom-checkbox small">
+                            <input type="checkbox" class="custom-control-input" id="customCheck"/>
+                            <label class="custom-control-label" for="customCheck">Remember Me</label>
+                          </div>
+                        </div>
+                        <button class="btn btn-primary btn-user btn-block" type="button" onclick="window.location.href='home.html'">
+                          Login
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="assets/jquery/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="assets/MDB-free/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="assets/owl.carousel/owl.carousel.min.js"></script>
+  <!-- aos script files -->
+  <script src="assets/aos/aos.js"></script>
+  <!-- venobox script files -->
+  <script src="assets/venobox/venobox.min.js"></script>
+  <!-- script files -->
+  <script src="assets/lib/crs.min.js"></script>
+  <script src="assets/lib/script.js"></script>
+  <!--------table style lib------------------------>
+  <script src="assets/datatables/jquery.dataTables.min.js"></script>
+  <script src="assets/datatables/dataTables.bootstrap4.min.js"></script>
+  <script type="text/javascript">
+    var animateButton = function(e) {
+
+      e.preventDefault;
+      //reset animation
+      e.target.classList.remove('animate');
+      
+      e.target.classList.add('animate');
+      setTimeout(function(){
+        e.target.classList.remove('animate');
+      },700);
+    };
+
+    var bubblyButtons = document.getElementsByClassName("bubbly-button");
+
+    for (var i = 0; i < bubblyButtons.length; i++) {
+      bubblyButtons[i].addEventListener('click', animateButton, false);
+    }
+  </script>
+
+</body>
+
+</html>
