@@ -16,7 +16,7 @@
 }
 .bg_line {
     background-color: #ffffff;
-    background-image: url(assets/images/line.png);
+    background-image: url(../images/line.png);
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: 70% auto;
@@ -139,5 +139,37 @@ video {
   .group_main .btn_logins{
     font-size: 13px;
     margin:0px;
+  }
+}
+/* Shine */
+.hover14 {
+  position: relative;
+}
+.hover14::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: '';
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+}
+.hover14:hover::before {
+  -webkit-animation: shine .75s;
+  animation: shine .75s;
+}
+@-webkit-keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 125%;
   }
 }
