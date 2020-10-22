@@ -107,14 +107,17 @@
    </div>
     <div class="col-6 text-center px-0">
       <h4 class="text-danger ff_mon">
-        <img class="" src="assets/images/HOS-logo.png" style="width:auto;height: 60px"><br>
-        <b class="text_shadow">Supplier E Services</b></h4>
+        <!-- <img class="" src="assets/images/HOS-logo.png" style="width:auto;height: 60px">-->
+        <b class="text_shadow4 gradient_text2">S-<i class="fab fa-etsy"></i>-S</b></h4>
+        <span class="text_shadow3 fs_25 fw_800">Supplier <i class="fab fa-etsy"></i> Services</span>
     </div>
     <div class="col-3 text-right px-0" style="font-size: 11px;font-weight: 600;"> 
       <div class="row">
-         <div class="col-12 text-center">
+        <div class="col-2"></div>
+         <div class="col-8 text-right">
            <img class="" src="assets/images/logo2.png" height="50px" width="auto" style="margin:16px 10px">
          </div>
+         <div class="col-2"></div>
       </div>
         <!-- <span class="dropdown">
           <span class="dropdown-toggle" data-toggle="dropdown" style="color:#197c89">White Pharmacy</span> |
@@ -207,6 +210,12 @@
               Catelogue</a>
             </li> -->
           </ul>
+          <!-- <ul class="navbar-nav mr-auto" id="switcher">
+            <li id="grayButton"></li>
+            <li id="whiteButton"></li>
+            <li id="blueButton"></li>
+            <li id="yellowButton"></li>
+          </ul> -->
           <ul class="navbar-nav ml-auto">
           <li class="nav-item px-2">
             <a>
@@ -332,7 +341,7 @@
             </a>
             <a
               class="btn btn-primary"
-              href="../request.html"
+              href=""
               type="submit"
               value="submit"
             >
@@ -402,6 +411,27 @@
         // disableDaysOfWeek: [1, 2],
             });
         });
+      //=====theme switch===========//
+      $('#grayButton').click(switchGray);
+      $('#whiteButton').click(switchWhite);
+      $('#blueButton').click(switchBlue);
+      $('#yellowButton').click(switchYellow);
+
+      function switchGray() {
+        $('body').attr('class', 'gray');
+      }
+
+      function switchWhite() {
+        $('body').attr('class', 'white');
+      }
+
+      function switchBlue() {
+        $('body').attr('class', 'blue');
+      }
+
+      function switchYellow() {
+        $('body').attr('class', 'yellow');
+      }
     </script>
 </body>
 </html>

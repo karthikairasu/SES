@@ -101,6 +101,12 @@
 /*.table tbody tr:hover{
   background-color: #63b6ff!important;
 }*/
+.fw_800{
+  font-weight: 800;
+}
+.fs_25{
+  font-size: 25px;
+}
 .text_shadow{
   text-shadow: 0.04em 0.04em 0 #fff, 0.08em 0.08em 0 #aaa;
   -webkit-text-shadow: .04em .04em 0 #fff, .08em .08em 0 #aaa;
@@ -135,9 +141,98 @@ text-shadow: -10px 10px 0px #00e6e6,
                  -20px 20px 0px #01cccc,
                  -30px 30px 0px #00bdbd;}
 .text_shadow7{
-color: rgba(0,0,0,0.6);
-text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
-                 0px -5px 35px rgba(255,255,255,0.3);}
+   color: rgba(0,0,0,0.6);
+   text-shadow: 2px 8px 6px rgba(0,0,0,0.2),0px -5px 35px rgba(255,255,255,0.3);
+}
+/* Fallback: Set a background color. */
+ .gradient_text {
+   background-color: #ca4246;
+  /* Create the gradient. */
+   background-image: linear-gradient(45deg, #ca4246 16.666%, #e16541 16.666%, #e16541 33.333%, #f18f43 33.333%, #f18f43 50%, #8b9862 50%, #8b9862 66.666%, #476098 66.666%, #476098 83.333%, #a7489b 83.333%);
+  /* Set the background size and repeat properties. */
+   background-size: 100%;
+   background-repeat: repeat;
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+  /* Animate the text when loading the element. */
+  /* This animates it on page load and when hovering out. */
+   animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+ .gradient_text:hover {
+   animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+ @keyframes rainbow-text-simple-animation-rev {
+   0% {
+     background-size: 650%;
+  }
+   40% {
+     background-size: 650%;
+  }
+   100% {
+     background-size: 100%;
+  }
+}
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+ @keyframes rainbow-text-simple-animation {
+   0% {
+     background-size: 100%;
+  }
+   80% {
+     background-size: 650%;
+  }
+   100% {
+     background-size: 650%;
+  }
+}
+  .gradient_text2 {
+   background-color: #1c2346;
+  /* Create the gradient. */
+   background-image: linear-gradient(45deg, #1c2346 16.666%, #1c2346 16.666%, #1c2346 33.333%, #e4372a 33.333%, #e35c1d 50%, #e88053 50%, #e32c20 66.666%, #e32c20 66.666%, #e42b28 83.333%, #e45a29 83.333%);
+  /* Set the background size and repeat properties. */
+   background-size: 100%;
+   background-repeat: repeat;
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+  /* Animate the text when loading the element. */
+  /* This animates it on page load and when hovering out. */
+   animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+ .gradient_text2:hover {
+   animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+ @keyframes rainbow-text-simple-animation-rev {
+   0% {
+     background-size: 650%;
+  }
+   40% {
+     background-size: 650%;
+  }
+   100% {
+     background-size: 100%;
+  }
+}
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+ @keyframes rainbow-text-simple-animation {
+   0% {
+     background-size: 100%;
+  }
+   80% {
+     background-size: 650%;
+  }
+   100% {
+     background-size: 650%;
+  }
+}
 /*===========checkbox==========*/
 
 @keyframes click-wave {
@@ -434,4 +529,37 @@ text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
 }
 .table_fixed_height thead tr th {
     white-space: nowrap;
+}
+.table-borderless td {
+    padding: 4px 2px!important;
+    vertical-align: middle!important;
+    border-top: 1px solid #ffffff00!important;
+}
+/*===========theme switcher=============*/
+#switcher {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#switcher li {
+  float: left;
+  width: 30px;
+  height: 30px;
+  margin: 0 15px 15px 0;
+  border-radius: 30px;
+  border: 3px solid black;
+}
+
+#grayButton {
+  background: gray;
+}
+#whiteButton {
+  background: white;
+}
+#blueButton {
+  background: blue;
+}
+#yellowButton {
+  background: yellow;
 }
