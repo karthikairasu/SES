@@ -67,6 +67,21 @@
     #example_wrapper .table tr:nth-child(1) th {
     background-color: #3276b1!important;
 }
+.dataTables_scrollBody{
+  position: relative;
+    overflow: hidden!important;
+    width: 102%!important;
+    max-height: 41vh;
+}
+.dataTables_scrollHead{
+  overflow: hidden;
+    position: relative;
+    border: 0px;
+    width: 102%!important;
+}
+.dataTables_scroll{
+  overflow-x:auto;
+}
   </style>
 </head>
 <body class="bg-light">
@@ -227,39 +242,46 @@
                 </tr>
               </thead>
               <tbody>
-                  <tr role="row" class="odd">
-                  <td
-                    onclick="window.location.href='https://ansara.in/asn2c/web/non_pdt_details_delivery/000-000-004'"
-                    class="sorting_1"
-                  >
-                    000-000-004
-                  </td>
-                  <!-- <td onclick="window.location.href='https://ansara.in/asn2c/web/non_pdt_details_delivery/000-000-004'">4500015950</td> -->
-                  <td
-                    onclick="window.location.href='https://ansara.in/asn2c/web/non_pdt_details_delivery/000-000-004'"
-                  >
-                    Emergency stock-Riyadh
-                  </td>
-                  <td
-                    onclick="window.location.href='https://ansara.in/asn2c/web/non_pdt_details_delivery/000-000-004'"
-                  >
-                    <span class="text-warning px-1"><b>NEW</b></span>
-                  </td>
-                  <td
-                    onclick="window.location.href='https://ansara.in/asn2c/web/non_pdt_details_delivery/000-000-004'"
-                  >
-                    2020-07-28
-                  </td>
+                <tr>
+                  <td> 000-000-004 </td> 
+                  <td> Emergency stock-Riyadh </td>
+                  <td> <span class="text-warning px-1"><b>NEW</b></span> </td>
+                  <td> 2020-07-28 </td>
                   <td>75</td>
                   <td>
-                    <a
-                      target="_blank"
-                      href="https://ansara.in/asn2c/web/pdf_print/000-000-004"
-                      class="btn btn-primary btn-sm disabled"
-                      ><i class="fas fa-download" aria-hidden="true"></i> /
-                      <i class="fas fa-print" aria-hidden="true"></i
+                    <a target="_blank"href=""class="btn btn-primary btn-sm"><i class="fas fa-download" aria-hidden="true"></i> / <i class="fas fa-print" aria-hidden="true"></i
                     ></a>
-                    <!-- <i class="fas fa-download" ></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-print"></i> -->
+                  </td>
+                </tr>
+                <tr>
+                  <td> 000-000-004 </td> 
+                  <td> Emergency stock-Riyadh </td>
+                  <td> <span class="text-warning px-1"><b>NEW</b></span> </td>
+                  <td> 2020-07-28 </td>
+                  <td>75</td>
+                  <td>
+                    <a target="_blank"href=""class="btn btn-primary btn-sm"><i class="fas fa-download" aria-hidden="true"></i> / <i class="fas fa-print" aria-hidden="true"></i
+                    ></a>
+                  </td>
+                </tr>
+                <tr>
+                  <td> 000-000-004 </td> 
+                  <td> Emergency stock-Riyadh </td>
+                  <td> <span class="text-warning px-1"><b>ACCEPTED</b></span> </td>
+                  <td> 2020-07-28 </td>
+                  <td>75</td>
+                  <td>
+                    <a target="_blank"href=""class="btn btn-warning btn-sm">Initial GR</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td> 000-000-004 </td> 
+                  <td> Emergency stock-Riyadh </td>
+                  <td> <span class="text-warning px-1"><b>ACCEPTED</b></span> </td>
+                  <td> 2020-07-28 </td>
+                  <td>75</td>
+                  <td>
+                    <a target="_blank"href=""class="btn btn-success btn-sm">Final GR</a>
                   </td>
                 </tr>
                  
